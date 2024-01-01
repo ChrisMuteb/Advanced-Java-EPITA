@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Initial Test Driven Development with junit">
-      <change afterPath="$PROJECT_DIR$/BankAccount/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BankAccount/src/main/java/org/example/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BankAccount/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BankAccount/src/test/java/BankAccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/datamodel/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Client sends a GET request to the http server. Additionally, an object mapper is used to serialize &amp; deserialized an object.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/datamodel/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/datamodel/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703941669756</updated>
-      <workItem from="1703941671162" duration="14408000" />
+      <workItem from="1703941671162" duration="17526000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -116,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703944430332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Client sends a GET request to the http server. Additionally, an object mapper is used to serialize &amp; deserialized an object.">
+      <option name="closed" value="true" />
+      <created>1704136594187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704136594187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +125,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Test Driven Development with junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Test Driven Development with junit" />
+    <MESSAGE value="Client sends a GET request to the http server. Additionally, an object mapper is used to serialize &amp; deserialized an object." />
+    <option name="LAST_COMMIT_MESSAGE" value="Client sends a GET request to the http server. Additionally, an object mapper is used to serialize &amp; deserialized an object." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
