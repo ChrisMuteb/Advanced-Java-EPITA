@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/core/maths/services/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/QuizCoreTests.java" afterDir="false" />
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Initial Test Driven Development with junit">
+      <change afterPath="$PROJECT_DIR$/BankAccount/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankAccount/src/main/java/org/example/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankAccount/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BankAccount/src/test/java/BankAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/datamodel/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/chriskayomb/Documents/EPITA/S3/AdvJ/Exam-Prep/adv-java-parent/quiz-core/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "/Users/chriskayomb/Documents/EPITA/S3/AdvJ/Exam-Prep/adv-java-parent/quiz-rest-httpserver/src/main/java/org/example/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,7 +67,14 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HttpServerTest">
+    <configuration name="HttpServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HttpServerTest" />
+      <module name="quiz-rest-httpserver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuizCoreTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quiz-core" />
       <extension name="coverage">
@@ -85,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpServerTest" />
         <item itemvalue="JUnit.QuizCoreTests.test" />
       </list>
     </recent_temporary>
@@ -97,8 +106,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703941669756</updated>
-      <workItem from="1703941671162" duration="2675000" />
+      <workItem from="1703941671162" duration="14408000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
+      <option name="closed" value="true" />
+      <created>1703944430332</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703944430332</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial Test Driven Development with junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Test Driven Development with junit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -119,6 +139,16 @@
           <url>file://$PROJECT_DIR$/quiz-core/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BankAccount/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
