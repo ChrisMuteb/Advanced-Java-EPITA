@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Client sends a POST request to the http server.">
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Multithreading implemented">
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/ConfigurationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/test/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +57,37 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quiz-core/src/test/resources" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn install" />
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HttpServerTest">
+  <component name="RunManager" selected="JUnit.ConfigurationTest.test">
     <configuration name="HttpServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HttpServerTest" />
       <module name="quiz-rest-httpserver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigurationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.epita.tests.quiz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.epita.tests.quiz" />
+      <option name="MAIN_CLASS_NAME" value="fr.epita.tests.quiz.ConfigurationTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConfigurationTest.test" />
         <item itemvalue="Application.HttpServerTest" />
         <item itemvalue="JUnit.QuizCoreTests.test" />
       </list>
@@ -98,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703941669756</updated>
       <workItem from="1703941671162" duration="19134000" />
-      <workItem from="1704144887672" duration="5212000" />
+      <workItem from="1704144887672" duration="13502000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -124,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704139981570</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Multithreading implemented">
+      <option name="closed" value="true" />
+      <created>1704222388727</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704222388727</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +170,8 @@
     <MESSAGE value="Initial Test Driven Development with junit" />
     <MESSAGE value="Client sends a GET request to the http server. Additionally, an object mapper is used to serialize &amp; deserialized an object." />
     <MESSAGE value="Client sends a POST request to the http server." />
-    <option name="LAST_COMMIT_MESSAGE" value="Client sends a POST request to the http server." />
+    <MESSAGE value="Multithreading implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multithreading implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

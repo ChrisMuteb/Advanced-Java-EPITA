@@ -24,6 +24,11 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.16.1</version>
         </dependency>
+        <dependency>
+            <groupId>fr.epita</groupId>
+            <artifactId>quiz-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
