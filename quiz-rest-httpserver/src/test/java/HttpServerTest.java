@@ -10,13 +10,18 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.*;
 
 public class HttpServerTest {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ExecutionException, InterruptedException, TimeoutException {
         // server
         HttpServer server = HttpServer.create(new InetSocketAddress(80), 0);
+        int processors = Runtime.getRuntime().availableProcessors() / 2; // give the numbr of processor on the machine
+        ExecutorService executor = Executors.newFixedThreadPool(processors);
+        server.setExecutor(executor);
         HttpContext context = server.createContext("/test");
         context.setHandler(ex -> {
             String requestMethod = ex.getRequestMethod();
@@ -44,8 +49,41 @@ public class HttpServerTest {
         });
         server.start();
 
-        connectAndGet();
-        connectAndPost();
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        List<Future<?>> futures = new ArrayList<>();
+        // thread split
+        for(int i=0; i<100; i++){
+            System.out.println("client - starting task - i =" + i);
+            Future<?> future = executorService.submit(()->{
+                System.out.println(Thread.currentThread().getId());// thread id of the one executing the task
+                System.out.println(Thread.currentThread().getState());
+                try {
+                    connectAndGet();
+                    connectAndPost();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            });
+            futures.add(future);
+        }
+        // thread join (synchronization)
+        for(Future future: futures){
+            future.get(1000, TimeUnit.MILLISECONDS);//forces the thread to wait until the future is
+        }
+
+        Future<?> future = executorService.submit(()->{
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        try{
+            future.get(1000, TimeUnit.MILLISECONDS);
+        }catch (InterruptedException e){
+            System.out.println("was interrupted");
+        }
+
 
         server.stop(200);
     }
