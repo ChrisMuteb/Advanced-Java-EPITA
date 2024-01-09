@@ -12,6 +12,7 @@
         <module>quiz-core</module>
         <module>BankAccount</module>
         <module>quiz-rest-httpserver</module>
+        <module>junit-spring-module</module>
     </modules>
 
     <properties>
