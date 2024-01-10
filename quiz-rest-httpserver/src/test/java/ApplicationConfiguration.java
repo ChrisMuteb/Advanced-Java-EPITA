@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 public class ApplicationConfiguration {
     @Bean("httpClient")
     public UserHttpClient getHttpClient(){
-        return new UserHttpClient("url");
+        return new UserHttpClient("http://localhost:80/test");
     }
     @Bean("rootHandler")
     public HttpHandler rootHandler(){

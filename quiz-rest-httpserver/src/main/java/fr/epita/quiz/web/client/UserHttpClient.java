@@ -16,7 +16,7 @@ public class UserHttpClient {
     public UserHttpClient(String url){
         this.url = url;
     }
-    private List<User> getUsers() throws IOException {
+    public List<User> getUsers() throws IOException {
         // client
         HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
         connection.setRequestMethod("GET");
@@ -31,7 +31,7 @@ public class UserHttpClient {
         return users;
     }
 
-    private void createUser(User user) throws IOException {
+    public void createUser(User user) throws IOException {
         // client
         HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
         connection.setRequestMethod("POST");
