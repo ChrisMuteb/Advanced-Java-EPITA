@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Dependency Injection introduction">
-      <change afterPath="$PROJECT_DIR$/junit-spring-module/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/junit-spring-module/src/test/java/InjectionConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/junit-spring-module/src/test/java/TestSpringJunitIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ApplicationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="configuration and DI - using DI to improve the app design.">
+      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/web/RootController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/HttpServerTestThroughDI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/ConfigurationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/ConfigurationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestWithDi.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestWithDi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ApplicationConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,18 +69,21 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSpringJunitIntegration.firstTest">
-    <configuration name="ConfigurationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quiz-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.epita.tests.quiz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.epita.tests.quiz" />
-      <option name="MAIN_CLASS_NAME" value="fr.epita.tests.quiz.ConfigurationTest" />
-      <option name="METHOD_NAME" value="test" />
+  <component name="RunManager" selected="JUnit.HttpServerTestThroughDI">
+    <configuration name="HttpServerTestThroughDI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-rest-httpserver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HttpServerTestThroughDI" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpServerTestThroughDI.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-rest-httpserver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HttpServerTestThroughDI" />
+      <option name="METHOD_NAME" value="firstTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,21 +95,6 @@
       <option name="MAIN_CLASS_NAME" value="TestSpringJunitIntegration" />
       <option name="METHOD_NAME" value="firstTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestWithDi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quiz-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.epita.tests.quiz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.epita.tests.quiz" />
-      <option name="MAIN_CLASS_NAME" value="fr.epita.tests.quiz.TestWithDi" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,19 +133,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.HttpServerTestThroughDI" />
+      <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
       <item itemvalue="JUnit.TestSpringJunitIntegration.firstTest" />
       <item itemvalue="JUnit.TestWithDi.testDAOCreation" />
-      <item itemvalue="JUnit.ConfigurationTest.test" />
-      <item itemvalue="JUnit.TestWithDi" />
       <item itemvalue="JUnit.TestWithDi.firstTestFromDI" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpServerTestThroughDI" />
+        <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
         <item itemvalue="JUnit.TestSpringJunitIntegration.firstTest" />
         <item itemvalue="JUnit.TestWithDi.testDAOCreation" />
         <item itemvalue="JUnit.TestWithDi.firstTestFromDI" />
-        <item itemvalue="JUnit.TestWithDi" />
-        <item itemvalue="JUnit.ConfigurationTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703941669756</updated>
       <workItem from="1703941671162" duration="19134000" />
-      <workItem from="1704144887672" duration="33495000" />
+      <workItem from="1704144887672" duration="39532000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -227,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704236609067</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="configuration and DI - using DI to improve the app design.">
+      <option name="closed" value="true" />
+      <created>1704836314938</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704836314938</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +230,8 @@
     <MESSAGE value="Multithreading implemented" />
     <MESSAGE value="Configuration of properties and pre-Dependency Injection" />
     <MESSAGE value="Dependency Injection introduction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dependency Injection introduction" />
+    <MESSAGE value="configuration and DI - using DI to improve the app design." />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration and DI - using DI to improve the app design." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
