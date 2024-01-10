@@ -1,4 +1,4 @@
-package fr.epita.quiz.web;
+package fr.epita.quiz.web.server;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.net.httpserver.HttpExchange;

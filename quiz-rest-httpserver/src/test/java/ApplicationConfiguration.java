@@ -1,7 +1,8 @@
 import com.sun.net.httpserver.HttpContext;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
-import fr.epita.quiz.web.RootController;
+import fr.epita.quiz.web.client.UserHttpClient;
+import fr.epita.quiz.web.server.RootController;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,6 +14,10 @@ import java.util.concurrent.Executors;
 
 @Configuration
 public class ApplicationConfiguration {
+    @Bean("httpClient")
+    public UserHttpClient getHttpClient(){
+        return new UserHttpClient("url");
+    }
     @Bean("rootHandler")
     public HttpHandler rootHandler(){
         return new RootController();
