@@ -1,4 +1,5 @@
 import com.sun.net.httpserver.HttpServer;
+import fr.epita.quiz.web.server.MicroServer;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,7 +13,7 @@ import javax.inject.Inject;
 @ContextConfiguration(classes = ApplicationConfiguration.class)
 public class HttpServerTestThroughDI {
     @Inject
-    HttpServer server;
+    MicroServer server;
 
     @BeforeEach
     public void setup(){
@@ -26,6 +27,6 @@ public class HttpServerTestThroughDI {
 
     @AfterEach
     public void stop(){
-        server.stop(1);
+        server.stop();
     }
 }

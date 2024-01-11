@@ -1,6 +1,7 @@
 import com.sun.net.httpserver.HttpServer;
 import fr.epita.quiz.datamodel.User;
 import fr.epita.quiz.web.client.UserHttpClient;
+import fr.epita.quiz.web.server.MicroServer;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,7 +16,7 @@ import java.util.List;
 @ContextConfiguration(classes = ApplicationConfiguration.class)
 public class ClientServerCommunicationTest {
     @Inject
-    private HttpServer server;
+    private MicroServer server;
     @Inject
     private UserHttpClient client;
     @Test
@@ -23,13 +24,10 @@ public class ClientServerCommunicationTest {
         // given
         server.start();
         client.createUser(new User("test", "paris","01234"));
-
         // when
         List<User> users = client.getUsers();
-
         // then
         Assertions.assertThat(users).hasSize(1);
-
-        server.stop(2);
+        server.stop();
     }
 }
