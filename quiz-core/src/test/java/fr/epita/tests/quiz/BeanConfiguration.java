@@ -1,7 +1,10 @@
 package fr.epita.tests.quiz;
 
+import fr.epita.quiz.services.ChoiceJPADAO;
 import fr.epita.quiz.services.QuestionDAOWithDI;
 import fr.epita.quiz.services.QuestionJPADAO;
+import fr.epita.quiz.services.api.IChoiceDAO;
+import fr.epita.quiz.services.api.IQuestionDAO;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -17,9 +20,17 @@ public class BeanConfiguration {
     static {
         System.setProperty("conf.location", "src/test/resources/conf.properties");
     }
-    @Bean("questionJPADAO")
-    public QuestionJPADAO questionDAOWithDI(SessionFactory factory){
+    @Bean("questionDAO")
+    public IQuestionDAO questionDAO(SessionFactory factory){
         return new QuestionJPADAO(factory);
+    }
+    @Bean("choiceDAO")
+    public IChoiceDAO choiceDAO(SessionFactory factory){
+        return new ChoiceJPADAO(factory);
+    }
+    @Bean
+    QuestionDAOWithDI questionDAOWithDI(){
+        return new QuestionDAOWithDI();
     }
     @Bean("defaultString")
     public String getTestStringValue(){
