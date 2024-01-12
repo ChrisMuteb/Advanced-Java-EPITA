@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="create a getUsers and createUser functions in the UserHttpClient class.">
-      <change afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ClientServerCommunicationTest.java" afterDir="false" />
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Create a MicroServer and update the exising testing class">
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestHibernateORM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/web/client/UserHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/web/client/UserHttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/web/server/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/main/java/fr/epita/quiz/web/server/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ClientServerCommunicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-rest-httpserver/src/test/java/ClientServerCommunicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClientServerCommunicationTest">
+  <component name="RunManager" selected="JUnit.TestHibernateORM">
     <configuration name="ClientServerCommunicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quiz-rest-httpserver" />
       <option name="PACKAGE_NAME" value="" />
@@ -99,6 +103,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestHibernateORM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.epita.tests.quiz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.epita.tests.quiz" />
+      <option name="MAIN_CLASS_NAME" value="fr.epita.tests.quiz.TestHibernateORM" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSpringJunitIntegration.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-spring-module" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,36 +128,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestWithDi.testDAOCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quiz-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.epita.tests.quiz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.epita.tests.quiz" />
-      <option name="MAIN_CLASS_NAME" value="fr.epita.tests.quiz.TestWithDi" />
-      <option name="METHOD_NAME" value="testDAOCreation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.ClientServerCommunicationTest" />
       <item itemvalue="JUnit.HttpServerTestThroughDI" />
       <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
+      <item itemvalue="JUnit.TestHibernateORM" />
       <item itemvalue="JUnit.TestSpringJunitIntegration.firstTest" />
-      <item itemvalue="JUnit.TestWithDi.testDAOCreation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHibernateORM" />
         <item itemvalue="JUnit.ClientServerCommunicationTest" />
         <item itemvalue="JUnit.HttpServerTestThroughDI" />
         <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
         <item itemvalue="JUnit.TestSpringJunitIntegration.firstTest" />
-        <item itemvalue="JUnit.TestWithDi.testDAOCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703941669756</updated>
       <workItem from="1703941671162" duration="19134000" />
-      <workItem from="1704144887672" duration="44163000" />
+      <workItem from="1704144887672" duration="52206000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -225,7 +228,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704925132927</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="client server communication class created">
+      <option name="closed" value="true" />
+      <created>1704926834091</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704926834091</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Create a MicroServer and update the exising testing class">
+      <option name="closed" value="true" />
+      <created>1705009062022</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705009062023</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +261,9 @@
     <MESSAGE value="configuration and DI - using DI to improve the app design." />
     <MESSAGE value="class design improved by DI" />
     <MESSAGE value="create a getUsers and createUser functions in the UserHttpClient class." />
-    <option name="LAST_COMMIT_MESSAGE" value="create a getUsers and createUser functions in the UserHttpClient class." />
+    <MESSAGE value="client server communication class created" />
+    <MESSAGE value="Create a MicroServer and update the exising testing class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a MicroServer and update the exising testing class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

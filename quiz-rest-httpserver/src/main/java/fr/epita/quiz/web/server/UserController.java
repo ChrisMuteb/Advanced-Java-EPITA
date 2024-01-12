@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class RootController implements HttpHandler {
+public class UserController implements HttpHandler {
     @Override
     public void handle(HttpExchange ex) throws IOException {
             String requestMethod = ex.getRequestMethod();

@@ -5,6 +5,7 @@ import fr.epita.quiz.web.server.MicroServer;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -15,7 +16,7 @@ import java.util.List;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = ApplicationConfiguration.class)
 public class ClientServerCommunicationTest {
-    @Inject
+    @Autowired
     private MicroServer server;
     @Inject
     private UserHttpClient client;

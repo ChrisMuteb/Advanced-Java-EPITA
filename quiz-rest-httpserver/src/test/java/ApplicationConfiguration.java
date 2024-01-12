@@ -1,17 +1,12 @@
-import com.sun.net.httpserver.HttpContext;
 import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpServer;
 import fr.epita.quiz.web.client.UserHttpClient;
 import fr.epita.quiz.web.server.MicroServer;
-import fr.epita.quiz.web.server.RootController;
+import fr.epita.quiz.web.server.UserController;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 @Configuration
 public class ApplicationConfiguration {
@@ -21,7 +16,7 @@ public class ApplicationConfiguration {
     }
     @Bean("rootHandler")
     public HttpHandler rootHandler(){
-        return new RootController();
+        return new UserController();
     }
     @Bean
     public MicroServer  getServer(@Qualifier("rootHandler") HttpHandler handler) throws IOException {
