@@ -16,4 +16,16 @@ public class QuestionJPADAO {
         session.persist(question);
         transaction.commit();
     }
+    public void update(Question question){
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.merge(question);
+        transaction.commit();
+    }
+    public void delete(Question question){
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.remove(question);
+        transaction.commit();
+    }
 }

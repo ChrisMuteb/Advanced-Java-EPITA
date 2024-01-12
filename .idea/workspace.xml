@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Introducing hibernate &amp; jpa">
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" afterDir="false" />
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Creating a jpa dao where we can create a question using hibernate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +148,7 @@
       <updated>1703941669756</updated>
       <workItem from="1703941671162" duration="19134000" />
       <workItem from="1704144887672" duration="52758000" />
-      <workItem from="1705060175142" duration="1055000" />
+      <workItem from="1705060175142" duration="1967000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -246,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705020347041</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Creating a jpa dao where we can create a question using hibernate">
+      <option name="closed" value="true" />
+      <created>1705063918610</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705063918610</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +274,8 @@
     <MESSAGE value="client server communication class created" />
     <MESSAGE value="Create a MicroServer and update the exising testing class" />
     <MESSAGE value="Introducing hibernate &amp; jpa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introducing hibernate &amp; jpa" />
+    <MESSAGE value="Creating a jpa dao where we can create a question using hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating a jpa dao where we can create a question using hibernate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
