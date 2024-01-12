@@ -54,6 +54,11 @@ public class QuestionDAOWithDI implements IQuestionDAO {
         }
         return questions;
     }
+
+    @Override
+    public Question getById(Object id) {
+        return null;
+    }
 }
 
 

@@ -17,6 +17,10 @@ import java.util.Properties;
 
 @Configuration
 public class BeanConfiguration {
+    @Bean("myFirstBean")
+    String getFirstBean(){
+        return  "Hello from spring";
+    }
     static {
         System.setProperty("conf.location", "src/test/resources/conf.properties");
     }

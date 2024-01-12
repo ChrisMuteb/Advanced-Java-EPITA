@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="crud operation for the Choice entity">
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/api/IChoiceDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/api/IDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/api/IQuestionDAO.java" afterDir="false" />
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="eager lading vs lazy loading">
+      <change afterPath="$PROJECT_DIR$/training-exam/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/mvnbuild1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/src/main/java/fr/epita/training/datamodel/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/src/main/java/fr/epita/training/services/PassengerCSVReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/src/test/java/TestJUN1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/src/test/java/TestJUN2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/src/test/java/TestMVN2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/training-exam/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Choice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/ChoiceJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/ChoiceJPADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionDAOWithDI.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionDAOWithDI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestHibernateORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestHibernateORM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/chriskayomb/Documents/EPITA/S3/AdvJ/Exam-Prep/adv-java-parent/junit-spring-module/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/chriskayomb/Documents/EPITA/S3/AdvJ/Exam-Prep/adv-java-parent/training-exam/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/quiz-core/src/test/resources" />
@@ -77,7 +80,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestHibernateORM.testQuestionDAO">
+  <component name="RunManager" selected="JUnit.TestJUN2.test">
     <configuration name="ClientServerCommunicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quiz-rest-httpserver" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,16 +95,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HttpServerTestThroughDI" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HttpServerTestThroughDI.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quiz-rest-httpserver" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HttpServerTestThroughDI" />
-      <option name="METHOD_NAME" value="firstTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,20 +130,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestJUN2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="training-exam" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJUN2" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TestHibernateORM.testQuestionDAO" />
+      <item itemvalue="JUnit.TestJUN2.test" />
       <item itemvalue="JUnit.ClientServerCommunicationTest" />
       <item itemvalue="JUnit.HttpServerTestThroughDI" />
-      <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
       <item itemvalue="JUnit.TestHibernateORM" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestJUN2.test" />
         <item itemvalue="JUnit.TestHibernateORM.testQuestionDAO" />
         <item itemvalue="JUnit.TestHibernateORM" />
         <item itemvalue="JUnit.ClientServerCommunicationTest" />
         <item itemvalue="JUnit.HttpServerTestThroughDI" />
-        <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +167,7 @@
       <updated>1703941669756</updated>
       <workItem from="1703941671162" duration="19134000" />
       <workItem from="1704144887672" duration="52758000" />
-      <workItem from="1705060175142" duration="12564000" />
+      <workItem from="1705060175142" duration="18424000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -286,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705074774059</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="eager lading vs lazy loading">
+      <option name="closed" value="true" />
+      <created>1705086006114</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705086006114</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +320,8 @@
     <MESSAGE value="Creating a jpa dao where we can create a question using hibernate" />
     <MESSAGE value="update and delete question jpa dao created" />
     <MESSAGE value="crud operation for the Choice entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud operation for the Choice entity" />
+    <MESSAGE value="eager lading vs lazy loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="eager lading vs lazy loading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,6 +350,11 @@
           <url>file://$PROJECT_DIR$/junit-spring-module/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/training-exam/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
