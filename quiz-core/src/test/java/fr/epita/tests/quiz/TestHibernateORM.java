@@ -1,6 +1,7 @@
 package fr.epita.tests.quiz;
 
 import fr.epita.quiz.datamodel.Question;
+import fr.epita.quiz.services.QuestionJPADAO;
 import jakarta.persistence.Table;
 import org.assertj.core.api.Assertions;
 import org.hibernate.Session;
@@ -21,6 +22,8 @@ import java.util.List;
 public class TestHibernateORM {
     @Inject
     SessionFactory sf;
+    @Inject
+    QuestionJPADAO questionDAO;
     @Test
     public void testConf(){
         Question question = new Question();
@@ -37,6 +40,22 @@ public class TestHibernateORM {
         List<Question> allQuestions = session
                 .createQuery("from Question", Question.class).list();
         Assertions.assertThat(allQuestions).hasSize(1);
+    }
+    @Test
+    public void testQuestionDAO(){
+        // given
+        Question question = new Question();
+        question.setTitle("what is Hibernate?");
 
+        // when
+        questionDAO.create(question);
+
+        // then
+        List<Question> allQuestions = sf
+                .openSession()
+                .createQuery("from Question", Question.class)
+                .list();
+        Assertions.assertThat(allQuestions).hasSize(1);
+        System.out.println(allQuestions);
     }
 }

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="Creating a jpa dao where we can create a question using hibernate">
+    <list default="true" id="76f71ace-a1dc-49f2-bdf5-99c9e660303e" name="Changes" comment="update and delete question jpa dao created">
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/datamodel/Choice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/ChoiceJPADAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/main/java/fr/epita/quiz/services/QuestionJPADAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/BeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestHibernateORM.java" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-core/src/test/java/fr/epita/tests/quiz/TestHibernateORM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +72,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestHibernateORM">
+  <component name="RunManager" selected="JUnit.TestHibernateORM.testQuestionDAO">
     <configuration name="ClientServerCommunicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quiz-rest-httpserver" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,30 +116,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSpringJunitIntegration.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit-spring-module" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSpringJunitIntegration" />
-      <option name="METHOD_NAME" value="firstTest" />
+    <configuration name="TestHibernateORM.testQuestionDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.epita.tests.quiz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.epita.tests.quiz" />
+      <option name="MAIN_CLASS_NAME" value="fr.epita.tests.quiz.TestHibernateORM" />
+      <option name="METHOD_NAME" value="testQuestionDAO" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TestHibernateORM.testQuestionDAO" />
       <item itemvalue="JUnit.ClientServerCommunicationTest" />
       <item itemvalue="JUnit.HttpServerTestThroughDI" />
       <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
       <item itemvalue="JUnit.TestHibernateORM" />
-      <item itemvalue="JUnit.TestSpringJunitIntegration.firstTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHibernateORM.testQuestionDAO" />
         <item itemvalue="JUnit.TestHibernateORM" />
         <item itemvalue="JUnit.ClientServerCommunicationTest" />
         <item itemvalue="JUnit.HttpServerTestThroughDI" />
         <item itemvalue="JUnit.HttpServerTestThroughDI.firstTest" />
-        <item itemvalue="JUnit.TestSpringJunitIntegration.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +159,7 @@
       <updated>1703941669756</updated>
       <workItem from="1703941671162" duration="19134000" />
       <workItem from="1704144887672" duration="52758000" />
-      <workItem from="1705060175142" duration="1967000" />
+      <workItem from="1705060175142" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Test Driven Development with junit">
       <option name="closed" value="true" />
@@ -254,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705063918610</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update and delete question jpa dao created">
+      <option name="closed" value="true" />
+      <created>1705064561051</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705064561051</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +294,8 @@
     <MESSAGE value="Create a MicroServer and update the exising testing class" />
     <MESSAGE value="Introducing hibernate &amp; jpa" />
     <MESSAGE value="Creating a jpa dao where we can create a question using hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating a jpa dao where we can create a question using hibernate" />
+    <MESSAGE value="update and delete question jpa dao created" />
+    <option name="LAST_COMMIT_MESSAGE" value="update and delete question jpa dao created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
