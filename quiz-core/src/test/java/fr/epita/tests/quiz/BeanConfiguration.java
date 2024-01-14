@@ -58,8 +58,6 @@ public class BeanConfiguration {
         sessionFactoryBean.setPackagesToScan("fr.epita.quiz.datamodel");
         sessionFactoryBean.setDataSource(ds);
         Properties extraproperties = new Properties();
-        //mapping to data definition language: hbm2ddl
-        // this is only for testing; otherwise we will keep validate.
         extraproperties.put("hibernate.hbm2ddl.auto", "update");
         extraproperties.put("hibernate.show_sql", "true");
 

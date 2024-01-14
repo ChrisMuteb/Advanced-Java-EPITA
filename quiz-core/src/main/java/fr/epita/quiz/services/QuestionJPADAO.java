@@ -5,6 +5,7 @@ import fr.epita.quiz.services.api.IQuestionDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -38,11 +39,18 @@ public class QuestionJPADAO implements IQuestionDAO {
 
     @Override
     public List<Question> search(Question question) {
-        return null;
+        return sessionFactory
+                .openSession()
+                .createQuery("from Question ", Question.class)
+                .list();
     }
 
     @Override
     public Question getById(Object id) {
-        return null;
+        Query<Question> query = sessionFactory
+                .openSession()
+                .createQuery("from Question where id=:id", Question.class);
+        query.setParameter("id", id);
+        return query.getSingleResult();
     }
 }

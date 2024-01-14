@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/quiz-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quiz-rest-httpserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quiz-rest-httpserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quiz-rest-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quiz-rest-spring-boot/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/training-exam/src/main/java" charset="UTF-8" />
